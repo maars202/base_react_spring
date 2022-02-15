@@ -1,0 +1,401 @@
+{ 
+"compliance":
+       {
+            "field_name": "source_of_funds",
+            "field_validation": "required",
+            "field_type": "select",
+            "field_value": [
+                [
+                    "01",
+                    "Bank Deposit"
+                ],
+                [
+                    "02",
+                    "Grant from family or friends"
+                ],
+                [
+                    "03",
+                    "Redemption of Investment products"
+                ],
+                [
+                    "04",
+                    "Allowance for family maintenance"
+                ],
+                [
+                    "05",
+                    "Loan"
+                ],
+                [
+                    "06",
+                    "Salary"
+                ],
+                [
+                    "07",
+                    "Real estate"
+                ],
+                [
+                    "08",
+                    "Revenue"
+                ]
+            ],
+            "field_display_name": "Source of Fund",
+            "excel_field_display_name": "Source of Funds"
+        },
+        {
+            "field_name": "remittance_purpose",
+            "field_validation": "required",
+            "field_type": "select",
+            "field_value": [
+                [
+                    "001-01",
+                    "Family/living expense"
+                ],
+                [
+                    "001-02",
+                    "Charity donation"
+                ],
+                [
+                    "002-02",
+                    "Payment for services"
+                ],
+                [
+                    "003-01",
+                    "Travel expenses"
+                ],
+                [
+                    "004-01",
+                    "Personal asset allocation"
+                ],
+                [
+                    "005-01",
+                    "Payment for goods"
+                ],
+                [
+                    "006-01",
+                    "Capital transfer"
+                ],
+                [
+                    "006-02",
+                    "Investment"
+                ],
+                [
+                    "007-01",
+                    "Employee payroll"
+                ],
+                [
+                    "008-01",
+                    "Goods trade"
+                ],
+                [
+                    "008-02",
+                    "Services trade"
+                ],
+                [
+                    "008-03",
+                    "Return of export trade"
+                ]
+            ],
+            "field_display_name": "Remittance Purpose",
+            "excel_field_display_name": "Remittance Purpose"
+        }
+}
+        
+{
+         "source": 
+
+         {
+            "field_name": "type",
+            "field_validation": "required|in:partner",
+            "field_type": "hidden",
+            "field_value": "partner",
+            "field_display_name": "",
+            "excel_field_display_name": "Remitter Type"
+        },
+        {
+            "field_name": "country",
+            "field_validation": "required|min:3|max:3",
+            "field_type": "hidden",
+            "field_value": "SGP",
+            "field_display_name": "Country",
+            "excel_field_display_name": "Remitter Country"
+        },
+        {
+            "field_name": "legal_name_first",
+            "field_validation": "required|max:50|regex:/^[A-Za-z0-9 .-]+$/",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "First Name",
+            "excel_field_display_name": "Remitter Legal Name First"
+        },
+        {
+            "field_name": "legal_name_last",
+            "field_validation": "required|max:50|regex:/^[A-Za-z0-9 .-]+$/",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "Last Name",
+            "excel_field_display_name": "Remitter Legal Name Last"
+        },
+        {
+            "field_name": "date_of_birth",
+            "field_validation": "required",
+            "field_type": "date",
+            "field_value": "",
+            "field_display_name": "Date of Birth",
+            "excel_field_display_name": "Remitter Date of Birth"
+        },
+        {
+            "field_name": "nationality",
+            "field_validation": "required|min:3|max:3",
+            "field_type": "select",
+            "field_value": [
+            ],
+            "field_display_name": "Nationality",
+            "excel_field_display_name": "Remitter Nationality"
+        },
+        {
+            "field_name": "id_type",
+            "field_validation": "required|in:national,passport",
+            "field_type": "select",
+            "field_value": [
+                [
+                    "national",
+                    "National"
+                ],
+                [
+                    "passport",
+                    "Passport"
+                ]
+            ],
+            "field_display_name": "ID Type",
+            "excel_field_display_name": "Remitter ID Type"
+        },
+        {
+            "field_name": "id_country",
+            "field_validation": "required|min:3|max:3",
+            "field_type": "select",
+            "field_value": [],
+            "field_display_name": "ID Country of Issue",
+            "excel_field_display_name": "Remitter ID Country"
+        },
+        {
+            "field_name": "id_number",
+            "field_validation": "required",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "ID Number",
+            "excel_field_display_name": "Remitter ID Number"
+        },
+        {
+            "field_name": "currency",
+            "field_validation": "required|in:EUR,SGD,USD",
+            "field_type": "hidden",
+            "field_value": "",
+            "field_display_name": "",
+            "excel_field_display_name": "Remitter Currency"
+        },
+        {
+            "field_name": "address_line",
+            "field_validation": "required|regex:/^[A-Za-z0-9 ,.-]+$/",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "Address",
+            "excel_field_display_name": "Remitter Address Line"
+        },
+        {
+            "field_name": "address_city",
+            "field_validation": "required|regex:/^[A-Za-z0-9 ,.-]+$/",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "Address City",
+            "excel_field_display_name": "Remitter Address City"
+        },
+        {
+            "field_name": "segment",
+            "field_validation": "required|in:individual",
+            "field_type": "hidden",
+            "field_value": "individual",
+            "field_display_name": "",
+            "excel_field_display_name": "Remitter Segment"
+        },
+       {
+            "field_name": "currency",
+            "field_validation": "required|in:PHP",
+            "field_type": "hidden",
+            "field_value": "PHP",
+            "field_display_name": "",
+            "excel_field_display_name": "Destination Currency"
+        },
+        {
+            "field_name": "units",
+            "field_validation": "required",
+            "field_type": "number",
+            "field_value": "",
+            "field_display_name": "Amount",
+            "excel_field_display_name": "Destination Amount"
+        }
+}
+
+{
+"destination":
+{
+            "field_name": "type",
+            "field_validation": "required|in:bank_account",
+            "field_type": "hidden",
+            "field_value": "bank_account",
+            "field_display_name": "Recipient Type",
+            "excel_field_display_name": "Recipient Type"
+        },
+        {
+            "field_name": "country",
+            "field_validation": "required|in:PHL|min:3|max:3",
+            "field_type": "hidden",
+            "field_value": "PHL",
+            "field_display_name": "Country",
+            "excel_field_display_name": "Recipient Country"
+        },
+        {
+            "field_name": "legal_name_first",
+            "field_validation": "required|max:50|regex:/^[A-Za-z0-9 .-]+$/",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "First Name",
+            "excel_field_display_name": "Recipient Legal Name First"
+        },
+        {
+            "field_name": "legal_name_last",
+            "field_validation": "required|max:50|regex:/^[A-Za-z0-9 .-]+$/",
+            "field_type": "text",
+            "field_value": "",
+            "field_display_name": "Last Name",
+            "excel_field_display_name": "Recipient Legal Name Last"
+        },
+        {
+            "field_name": "bank",
+            "field_validation": "required",
+            "field_type": "select",
+            "field_value": [
+                [
+                    "7083",
+                    "Bank Of China Limited"
+                ],
+                [
+                    "7126",
+                    "The Bank Of Tokyo-Mitsubishi UFJ, Ltd"
+                ],
+                [
+                    "7171",
+                    "DBS Bank"
+                ],
+                [
+                    "7214",
+                    "Citibank N.A"
+                ],
+                [
+                    "7232",
+                    "HongKong and Shanghai Banking Corporation Limited"
+                ],
+                [
+                    "7287",
+                    "HL Bank"
+                ],
+                [
+                    "7302",
+                    "Malayan Singapore Limited"
+                ],
+                [
+                    "7339",
+                    "Oversea-Chinese Banking Corporation Limited"
+                ],
+                [
+                    "7366",
+                    "RHB Bank Berhad"
+                ],
+                [
+                    "7375",
+                    "United Overseas Bank Limited"
+                ],
+                [
+                    "7463",
+                    "Deutsche Bank AG"
+                ],
+                [
+                    "7472",
+                    "Sumitomo Mitsui Banking Corporation"
+                ],
+                [
+                    "7481",
+                    "BNP Paribas"
+                ],
+                [
+                    "7621",
+                    "Mizuho Bank Limited"
+                ],
+                [
+                    "7931",
+                    "Australia & New Zealand Banking Group Limited"
+                ],
+                [
+                    "7986",
+                    "CIMB Bank Berhad"
+                ],
+                [
+                    "8712",
+                    "Industrial and Commercial Bank of China Limited"
+                ],
+                [
+                    "9186",
+                    "ICICI Bank Limited"
+                ],
+                [
+                    "9201",
+                    "Citibank Singapore Limited"
+                ],
+                [
+                    "9496",
+                    "Standard Chartered Bank (Singapore) Limited"
+                ],
+                [
+                    "9548",
+                    "HSBC Bank (Singapore) Ltd"
+                ],
+                [
+                    "9636",
+                    "Malayan Banking Berhad"
+                ]
+            ],
+            "field_display_name": "Bank",
+            "excel_field_display_name": "Recipient Bank"
+        },
+        {
+            "field_name": "account_number",
+            "field_validation": "required|max:16|regex:/^[0-9]+$/",
+            "field_type": "number",
+            "field_value": "",
+            "field_display_name": "Bank Account Number",
+            "excel_field_display_name": "Recipient Account Number"
+        }
+}
+
+{
+"destination_amount":
+        {
+            "field_name": "currency",
+            "field_validation": "required|in:PHP",
+            "field_type": "hidden",
+            "field_value": "PHP",
+            "field_display_name": "",
+            "excel_field_display_name": "Destination Currency"
+        },
+        {
+            "field_name": "units",
+            "field_validation": "required",
+            "field_type": "number",
+            "field_value": "",
+            "field_display_name": "Amount",
+            "excel_field_display_name": "Destination Amount"
+        }
+}
+
+
+
+

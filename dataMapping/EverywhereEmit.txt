@@ -1,0 +1,531 @@
+[
+    {
+        "fieldName": "BankAccountNumber",
+        "fieldLabel": "Receiver Account Number",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 50
+    },
+    {
+        "fieldName": "PaymentMode",
+        "fieldLabel": "Payment Mode",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 0,
+        "maxLength": 50
+    },
+    {
+        "fieldName": "PurposeOfRemittance",
+        "fieldLabel": "Purpose of Remittance",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 50,
+        "values": [
+            {
+                "data": "16",
+                "value": "Business Expenses (including wages, salaries etc)"
+            },
+            {
+                "data": "12",
+                "value": "Construction, purchase of land and mortgage repayments"
+            },
+            {
+                "data": "05",
+                "value": "Donation"
+            },
+            {
+                "data": "03",
+                "value": "Education"
+            },
+            {
+                "data": "02",
+                "value": "Family Expenses (including medical expenses, vehicle purchases etc)"
+            },
+            {
+                "data": "99",
+                "value": "Other"
+            },
+            {
+                "data": "06",
+                "value": "Payment for products and services"
+            },
+            {
+                "data": "10",
+                "value": "Self"
+            }
+        ]
+    },
+    {
+        "fieldName": "ReceiverAddress",
+        "fieldLabel": "Receiver Address",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 25
+    },
+    {
+        "fieldName": "ReceiverCity",
+        "fieldLabel": "Receiver City",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 50,
+        "values": {}
+    },
+    {
+        "fieldName": "ReceiverContactNumber",
+        "fieldLabel": "Receiver Mobile",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 8,
+        "maxLength": 15
+    },
+    {
+        "fieldName": "ReceiverCountry",
+        "fieldLabel": "Destination Country",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 0,
+        "maxLength": 50
+    },
+    {
+        "fieldName": "ReceiverFirstName",
+        "fieldLabel": "Receiver First Name",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 50
+    },
+    {
+        "fieldName": "ReceiverIdNumber",
+        "fieldLabel": "Receiver ID Number",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 30
+    },
+    {
+        "fieldName": "ReceiverIdType",
+        "fieldLabel": "Receiver Id TYpe",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 2,
+        "maxLength": 2,
+        "values": [
+            {
+                "data": "05",
+                "value": "Company Registration"
+            },
+            {
+                "data": "02",
+                "value": "ID card (government issued)"
+            },
+            {
+                "data": "99",
+                "value": "Other"
+            },
+            {
+                "data": "01",
+                "value": "Passport"
+            }
+        ]
+    },
+    {
+        "fieldName": "ReceiverLastName",
+        "fieldLabel": "Receiver last name",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 20
+    },
+    {
+        "fieldName": "ReceiverState",
+        "fieldLabel": "Receiver State",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 25,
+        "values": [
+            {
+                "data": "ABRA",
+                "value": "ABRA"
+            },
+            {
+                "data": "AKLAN",
+                "value": "AKLAN"
+            },
+            {
+                "data": "ALBAY",
+                "value": "ALBAY"
+            },
+            {
+                "data": "ANTIQUE",
+                "value": "ANTIQUE"
+            },
+            {
+                "data": "BATAAN",
+                "value": "BATAAN"
+            },
+            {
+                "data": "BATANGAS",
+                "value": "BATANGAS"
+            },
+            {
+                "data": "BULACAN",
+                "value": "BULACAN"
+            },
+            {
+                "data": "CAMARINES NORTE",
+                "value": "CAMARINES NORTE"
+            },
+            {
+                "data": "CAMARINES SUR",
+                "value": "CAMARINES SUR"
+            },
+            {
+                "data": "CAVITE",
+                "value": "CAVITE"
+            },
+            {
+                "data": "CEBU",
+                "value": "CEBU"
+            },
+            {
+                "data": "ILOCOS NORTE",
+                "value": "ILOCOS NORTE"
+            },
+            {
+                "data": "ILOCOS SUR",
+                "value": "ILOCOS SUR"
+            },
+            {
+                "data": "ILOILO",
+                "value": "ILOILO"
+            },
+            {
+                "data": "ISABELA",
+                "value": "ISABELA"
+            },
+            {
+                "data": "LA UNION",
+                "value": "LA UNION"
+            },
+            {
+                "data": "LAGUNA",
+                "value": "LAGUNA"
+            },
+            {
+                "data": "METRO MANILA",
+                "value": "METRO MANILA"
+            },
+            {
+                "data": "NEGROS OCCIDENTAL",
+                "value": "NEGROS OCCIDENTAL"
+            },
+            {
+                "data": "NEGROS ORIENTAL",
+                "value": "NEGROS ORIENTAL"
+            },
+            {
+                "data": "NUEVA ECIJA",
+                "value": "NUEVA ECIJA"
+            },
+            {
+                "data": "NUEVA VIZCAYA",
+                "value": "NUEVA VIZCAYA"
+            },
+            {
+                "data": "PAMPANGA",
+                "value": "PAMPANGA"
+            },
+            {
+                "data": "PANGASINAN",
+                "value": "PANGASINAN"
+            },
+            {
+                "data": "QUEZON",
+                "value": "QUEZON"
+            },
+            {
+                "data": "RIZAL",
+                "value": "RIZAL"
+            },
+            {
+                "data": "TARLAC",
+                "value": "TARLAC"
+            },
+            {
+                "data": "ZAMBALES",
+                "value": "ZAMBALES"
+            }
+        ]
+    },
+    {
+        "fieldName": "ReceiverZipCode",
+        "fieldLabel": "Receiver Zipcode",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 8
+    },
+    {
+        "fieldName": "SenderAddress",
+        "fieldLabel": "Sender Address",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 25
+    },
+    {
+        "fieldName": "SenderBeneficiaryRelationship",
+        "fieldLabel": "Relationship",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 15,
+        "values": [
+            {
+                "data": "04",
+                "value": "EMPLOYEE"
+            },
+            {
+                "data": "01",
+                "value": "FAMILY"
+            },
+            {
+                "data": "02",
+                "value": "FRIENDS"
+            },
+            {
+                "data": "99",
+                "value": "OTHERS"
+            },
+            {
+                "data": "03",
+                "value": "SELF"
+            },
+            {
+                "data": "09",
+                "value": "Seller/Service Provider"
+            }
+        ]
+    },
+    {
+        "fieldName": "SenderCity",
+        "fieldLabel": "Sender City",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 20
+    },
+    {
+        "fieldName": "SenderCountry",
+        "fieldLabel": "Sender Country",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 0,
+        "maxLength": 3
+    },
+    {
+        "fieldName": "SenderDateOfBirth",
+        "fieldLabel": "Sender DOB",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 10
+    },
+    {
+        "fieldName": "SenderFirstName",
+        "fieldLabel": "Sender First Name",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 50
+    },
+    {
+        "fieldName": "SenderIdExpireDate",
+        "fieldLabel": "Sender ID Expiry Date",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 10
+    },
+    {
+        "fieldName": "SenderIdIssueDate",
+        "fieldLabel": "Sender ID Issue Date",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 10
+    },
+    {
+        "fieldName": "SenderIdNumber",
+        "fieldLabel": "Sender ID Number",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 20
+    },
+    {
+        "fieldName": "SenderIdType",
+        "fieldLabel": "Sender ID Type",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 10,
+        "values": [
+            {
+                "data": "05",
+                "value": "Company Registration"
+            },
+            {
+                "data": "02",
+                "value": "ID card (government issued)"
+            },
+            {
+                "data": "99",
+                "value": "Other"
+            },
+            {
+                "data": "01",
+                "value": "Passport"
+            }
+        ]
+    },
+    {
+        "fieldName": "SenderLastName",
+        "fieldLabel": "Sender Last Name",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 50
+    },
+    {
+        "fieldName": "SenderMobile",
+        "fieldLabel": "Sender Mobile",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 8,
+        "maxLength": 15
+    },
+    {
+        "fieldName": "SenderNationality",
+        "fieldLabel": "Sender Nationality",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 3,
+        "maxLength": 3
+    },
+    {
+        "fieldName": "SenderOccupation",
+        "fieldLabel": "Sender Occupation",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 25,
+        "values": [
+            {
+                "data": "07",
+                "value": "Agriculture forestry fisheries"
+            },
+            {
+                "data": "08",
+                "value": "Construction, manufacturing, marine"
+            },
+            {
+                "data": "03",
+                "value": "Government officials and Special Interest Organizations"
+            },
+            {
+                "data": "99",
+                "value": "Other"
+            },
+            {
+                "data": "23",
+                "value": "Professional, and related workers"
+            },
+            {
+                "data": "15",
+                "value": "Retired"
+            },
+            {
+                "data": "05",
+                "value": "Self-employed"
+            },
+            {
+                "data": "13",
+                "value": "Student"
+            },
+            {
+                "data": "14",
+                "value": "Unemployed"
+            }
+        ]
+    },
+    {
+        "fieldName": "SenderSourceOfFund",
+        "fieldLabel": "Source of Fund",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 30,
+        "values": [
+            {
+                "data": "02",
+                "value": "Business and investment"
+            },
+            {
+                "data": "07",
+                "value": "Cryptocurrency or other Digital Payment Tokens"
+            },
+            {
+                "data": "06",
+                "value": "Donation"
+            },
+            {
+                "data": "04",
+                "value": "Friends and family"
+            },
+            {
+                "data": "99",
+                "value": "Other"
+            },
+            {
+                "data": "01",
+                "value": "Salary to include any work related compensation and pensions"
+            }
+        ]
+    },
+    {
+        "fieldName": "SenderState",
+        "fieldLabel": "Sender State",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 1,
+        "maxLength": 20,
+        "values": {}
+    },
+    {
+        "fieldName": "SenderZipCode",
+        "fieldLabel": "Sender Postal Code",
+        "required": true,
+        "dynamicField": false,
+        "minLength": 3,
+        "maxLength": 8
+    },
+    {
+        "fieldName": "ReceiverNationality",
+        "fieldLabel": "Receiver Nationality",
+        "required": true,
+        "dynamicField": true,
+        "minLength": 3,
+        "maxLength": 3
+    }
+]
+
+
+
+
+
