@@ -48,6 +48,18 @@
 			<version>8.0.25</version>
 		</dependency>
 
+
+		<!-- added new dep for heroku postgresql: -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+			</dependency>
+			<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+
 			<!-- https://www.bezkoder.com/spring-boot-upload-csv-file/ uploading and downloading csv -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
