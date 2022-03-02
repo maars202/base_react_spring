@@ -1,29 +1,26 @@
-package com.greglturnquist.payroll;
+package com.greglturnquist.payroll.countries;
+
 
 // just a reference datatype:
 import java.util.Objects;
 
-import javax.persistence.Column;
 // annotations that inject certain properties into function like @wrapper in python:
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 
 @Entity //(1)
-// adding @Table annotation to link it more to the table??
-@Table(name = "Employee2" )
-public class Employee {
+public class Country {
 
 	private @Id @GeneratedValue Long id; //(2)
 	private String firstName;
 	private String lastName;
 	private String description;
 
-	private Employee() {}
+	private Country() {}
 
-	public Employee(String firstName, String lastName, String description) {
+	public Country(String firstName, String lastName, String description) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.description = description;
@@ -33,7 +30,7 @@ public class Employee {
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
-		Employee employee = (Employee) o;
+		Country employee = (Country) o;
 		return Objects.equals(id, employee.id) &&
 			Objects.equals(firstName, employee.firstName) &&
 			Objects.equals(lastName, employee.lastName) &&
@@ -54,7 +51,6 @@ public class Employee {
 		this.id = id;
 	}
 
-	@Column(name = "first_name", unique = true, nullable = false)
 	public String getFirstName() {
 		return firstName;
 	}
